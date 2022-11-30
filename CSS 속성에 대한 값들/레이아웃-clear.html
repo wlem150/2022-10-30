@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+      .container {
+        border: 1px dashed #aaa;
+      }
+      div,
+      span {
+        padding: 20px;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Clear</h1>
+    <p>
+      Clear 속성은 float 속성을 사용한 후 의도치 않은 결과가 나타났을 때, 보통
+      사용된다.
+    </p>
+    <fieldset>
+      <legend>clear: none | left | right | both | initial | inherit;</legend>
+      <ul>
+        <li>none : 양쪽으로 float 요소를 허용(기본값)</li>
+        <li>left : 왼쪽으로 floating 요소 허용하지 않음</li>
+        <li>right : 오른쪽으로 floating 요소 허용하지 않음</li>
+        <li>both : 양쪽으로 floating 요소 허용하지 않음</li>
+      </ul>
+    </fieldset>
+
+    <h2>clear : none</h2>
+    <div class="container">
+      <div style="float: left">float:left;</div>
+      <span style="display: block; clear: none"
+        >내용 맘대로 내용 맘대로 내용 맘대로 내용 맘대로내용 맘대로 내용 맘대로
+        내용 맘대로 내용 맘대로내용 맘대로 내용 맘대로 내용 맘대로 내용
+        맘대로내용 맘대로 내용 맘대로 내용 맘대로 내용 맘대로</span
+      >
+    </div>
+
+    <h2>clear: left</h2>
+    <div class="container">
+      <div style="float: left">float:left;</div>
+      <span style="display: block; clear: left"
+        >내용 맘대로 내용 맘대로 내용 맘대로 내용 맘대로내용 맘대로 내용 맘대로
+        내용 맘대로 내용 맘대로내용 맘대로 내용 맘대로 내용 맘대로 내용
+        맘대로내용 맘대로 내용 맘대로 내용 맘대로 내용 맘대로</span
+      >
+    </div>
+
+    <h2>clear: right</h2>
+    <div class="container">
+      <div style="float: right">float:right;</div>
+      <span style="display: inline-block; clear: right"
+        >내용 맘대로 내용 맘대로 내용 맘대로 내용 맘대로내용 맘대로 내용 맘대로
+        내용 맘대로 내용 맘대로내용 맘대로 내용 맘대로 내용 맘대로 내용
+        맘대로내용 맘대로 내용 맘대로 내용 맘대로 내용 맘대로</span
+      >
+    </div>
+
+    <h2>clear: both</h2>
+    <div class="container">
+      <div style="float: left">float:left;</div>
+      <div style="float: right">float:right;</div>
+      <span style="display: block; clear: both"
+        >내용 맘대로 내용 맘대로 내용 맘대로 내용 맘대로내용 맘대로 내용 맘대로
+        내용 맘대로 내용 맘대로내용 맘대로 내용 맘대로 내용 맘대로 내용
+        맘대로내용 맘대로 내용 맘대로 내용 맘대로 내용 맘대로</span
+      >
+    </div>
+  </body>
+</html>

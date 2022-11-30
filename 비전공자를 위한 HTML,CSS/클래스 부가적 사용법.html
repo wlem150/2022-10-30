@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS</title>
+        <link rel="stylesheet" href="Sampletextcss.css">
+    </head>
+    <body>
+        
+        <ul>
+            <li class="item a">first</li>
+            <li class="item b">second</li>
+            <li class="item" id="special">third</li>
+        </ul>
+        <p class="">class foo</p>
+        <fieldset>
+            <legend>부분 속성값으로 선택</legend>
+            <p>부분 속성값으로 선택은 속성 이름과 속성값 사이에 사용되는 기호에 따라 동작이 조금 다르다.</p>
+            <dl>
+                <dt>같은 클래스를 주어주고 각기 각각의 CSS 용도를 다르게 적용</dt>
+                <dt class="color Sample cool">
+                    [class~="bar"]
+                    <dd>class 속성의 값이 공백으로 구분한 "bar" 단어가 포함되는 요소 선택</dd><br>
+                </dt>
+                <dt class="cool Sample cool">
+                    [class^="bar"]
+                    <dd>class 속성의 값이 "bar"로 시작되는 요소 선택</dd><br>
+                </dt>
+                <dt class="color Sample">
+                    [class$="bar"]
+                    <dd>class 속성의 값이 "bar"로 끝나는 요소 선택</dd><br>
+                </dt>
+                <dt class="color Sample cool">
+                    [class*="bar"]
+                    <dd>class 속성의 값이 "bar" 문자가 포함되는 요소 선택</dd>
+                </dt>
+            </dl>
+        </fieldset>
+
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+    <style>
+      li {
+        margin: 5px;
+      }
+      .parent {
+        z-index: 10;
+        position: relative;
+        width: 300px;
+        height: 50px;
+        border: 2px solid #000;
+        background-color: #ccc;
+      }
+
+      .child {
+        z-index: 10;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Z-index</h1>
+    <p>
+      요소의 위치를 지정하다 보면 부득이하게 두 요소가 겹쳐지는 경우가 많다.
+      결국 둘 중 하나는 다른 요소로 인해 덮어쓰게 된다. 이때 어느 요소가 더 위로
+      올라와야 하는지는 요소들의 쌓임 순서의 규칙에 따라 위치하게 되는데, 이것을
+      정하는 것이 바로 <span style="font-weight: bold">z-index</span> 의
+      역할이다.
+    </p>
+    <fieldset>
+      <legend>z-index: auto | number | initial | inherit;</legend>
+      <ul>
+        <li>auto : 쌓임 순서를 부모와 동일하게 설정(기본값)</li>
+        <li>number : 해당 수치로 쌓임 순서를 설정(음수 허용)</li>
+      </ul>
+    </fieldset>
+    <br /><br />
+    <fieldset>
+      <legend>z-index:1;</legend>
+      <ul>
+        <li>position 값이 static이 아닌 경우 지정가능</li>
+        <li>순서 값이 없을 경우 생성순서(코드상 순서)에 따라 쌓임</li>
+        <li>부모가 z-index 값이 있을 경우 부모 안에서만 의미있음</li>
+        <li>큰 값이 가장 위쪽(음수 사용 가능)</li>
+      </ul>
+    </fieldset>
+    <h2>z-index Eaxmple</h2>
+    <div class="wrap">
+      <h1 class="practive_title">z-index 속성</h1>
+      <div class="z_area">
+        <div class="parent" style="z-index: 11">
+          position: relative;
+          <div class="child" style="right: 20px; z-index: 1000">
+            position: absolute;
+          </div>
+        </div>
+        <div class="parent" style="z-index: 11">
+          position: relative;
+          <div class="child">position: absolute;</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

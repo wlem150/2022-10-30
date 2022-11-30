@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>실습</title>
+        <style>
+            div span { color: red; }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1><span>HTML</span>:Hyper Text Markup Language</h1>
+        </div>
+        <p>HTML과 CSS와 JAVASCRIPT를 이용해서 멋진 웹 사이트를 제작할 수 있다.</p>
+
+
+        <p>자손 선택자</p>
+        <div>div span{color:red;}</div>
+
+        <p>자식 선택자</p>
+        <div>div>h1{color:red}</div>
+    
+        <p>인접 형제 선택자</p>
+        <div>div + p{color:red}</div>
+
+        <p>body 요소의 자식인 div 요소의 자손인 table 요소 바로 뒤에 인접한 ul요소 선택</p>
+        <div>body>div table + ul {...}</div>
+    </body>
+</html>

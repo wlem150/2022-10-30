@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>line-height</title>
+    <style>
+      body {
+        font-size: 20px;
+        line-height: 2;
+      }
+      .parent {
+        width: 200px;
+        font-size: 10px;
+
+        line-height: normal;
+        line-height: 20px;
+        line-height: 2;
+        line-height: 200%;
+      }
+      .child {
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>line-height</h1>
+    <p>
+      line-height는 텍스트 라인의 높이를 의미하는 것으로 주로 행간을 제어할 때
+      사용됩니다.
+    </p>
+    <p>line-height: normal | number | length | initial | inherit ;</p>
+
+    <div class="parent">
+      <div class="child">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+        aspernatur vitae sapiente laudantium velit quo unde cupiditate autem,
+        harum eaque natus perferendis ducimus saepe libero, voluptatibus
+        voluptates possimus. Adipisci, delectus.
+      </div>
+    </div>
+  </body>
+</html>
