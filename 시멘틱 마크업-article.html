@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>article</title>
+    <style>
+      html {
+        font-size: 100%;
+      }
+      .forecast {
+        margin: 0;
+        padding: 0.3rem;
+        background-color: #eee;
+        font: 1rem "Fira Sans", sans-serif;
+      }
+      .forecast > h1,
+      .day-forecase {
+        margin: 0.5rem;
+        padding: 0.3rem;
+        font-size: 1.2rem;
+      }
+      .day-forecast {
+        background: right/contain content-box border-box no-repeat
+          url("/media/examples/rain.svg") white;
+      }
+      .day-forecast > h2,
+      .day-forecast > p {
+        margin: 0.2rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>article</h1>
+    <p>
+      HTML &lt;article&gt; 요소는 문서, 페이지, 애플리케이션, 또는 사이트 안에서
+      독립적으로 구분해 배포하거나 재사용할 수 있는 구획을 나타냅니다. 사용
+      예제로 게시판과 블로그 글, 매거진이나 뉴스 기사 등이 있습니다.
+    </p>
+    <h2>Article Example</h2>
+    <article class="forecast">
+      <h1>Weather forecast for Seattle</h1>
+      <article class="day-forecast">
+        <h2>03 March 2018</h2>
+        <p>Rain.</p>
+      </article>
+      <article class="day-forecast">
+        <h2>04 March 2018</h2>
+        <p>Periods of rain.</p>
+      </article>
+      <article class="day-forecast">
+        <h2>05 March 2018</h2>
+        <p>Heavy rain.</p>
+      </article>
+    </article>
+    <br />
+    <ul>
+      <li>
+        각각의 &lt;article&gt;을 식별할 수단이 필요합니다. 주로
+        제목(&lt;h1&gt;-&lt;h6&gt;) 요소를 &lt;article&gt;의 자식으로 포함하는
+        방법을 사용합니다.
+      </li>
+      <li>
+        &lt;article&gt; 요소가 중첩되어 있을 때, 안쪽에 있는 요소는 바깥쪽에
+        있는 요소와 관련된 글을 나타냅니다. 예를 들어 블로그 글의 댓글은, 글을
+        나타내는 &lt;article&gt; 요소 안에 중첩한 &lt;article&gt;로 나타낼 수
+        있습니다.
+      </li>
+      <li>
+        &lt;article&gt; 요소의 작성자 정보를 &lt;address&gt; 요소를 이용하여
+        제공할 수 있습니다. 그러나 중첩 &lt;article&gt;에는 적용되지 않습니다.
+      </li>
+      <li>
+        &lt;article&gt; 요소의 작성일자와 시간은 &lt;time&gt; 요소의 datetime
+        속성을 이용하여 설명할 수 있습니다. 참고로 &lt;time&gt; 요소의 pubdate
+        속성은 더 이상 W3C (en-US) HTML5 (en-US) 표준안에 포함되지 않습니다.
+      </li>
+    </ul>
+    <article class="film_review">
+      <header>
+        <h2>Jurassic Park</h2>
+      </header>
+      <section class="main_review">
+        <p>Dinos were great!</p>
+      </section>
+      <section class="user_reviews">
+        <article class="user_review">
+          <p>Way too scary for me.</p>
+          <footer>
+            <p>
+              Posted on <time datetime="2015-05-16 19:00">May 16</time> by Lisa.
+            </p>
+          </footer>
+        </article>
+        <article class="user_review">
+          <p>I agree, dinos are my favorite.</p>
+          <footer>
+            <p>
+              Posted on <time datetime="2015-05-17 19:00">May 17</time> by Tom.
+            </p>
+          </footer>
+        </article>
+      </section>
+      <footer>
+        <p>
+          Posted on <time datetime="2015-05-15 19:00">May 15</time> by Staff.
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>

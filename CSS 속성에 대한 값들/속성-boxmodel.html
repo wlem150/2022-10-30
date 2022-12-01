@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>boxmodel</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                margin: 0;
+                padding: 0;
+                border: 10px solid #000;
+                position: relative;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>boxmodel</h1>
+        <p>안에서부터 밖으로 하나씩</p>
+        <ol>
+            <li>content 영역</li>
+            <li>padding 영역</li>
+            <li>border 영역</li>
+            <li>margin 영역</li>
+        </ol>
+        <fieldset>
+            <legend>Content 영역</legend>
+            <dd>요쇼의 실제 내용을 포함하는 영역, 따라서 크기는 내용의 너비 및 높이를 나타낸다.</dd>
+        </fieldset>
+        <fieldset>
+            <legend>Border 영역</legend>
+            <dd>
+                content 영역을 감싸는 테두리 선을 border라고 한다.
+            </dd>
+        </fieldset>
+        <fieldset>
+            <legend>Padding 영역</legend>
+            <dd>
+                contnet영역과 테두리 사이의 여백을 padding이라고 한다.
+            </dd>
+            <dd>
+                content 영역이 배경, 색 또는 이미지가 있을 때 패딩 영역까지 영향을 미친다.
+            </dd>
+            <dd>
+                이에 따라 padding을 content의 연장으로 볼 수 있다.
+            </dd>
+        </fieldset>
+        <fieldset>
+            <legend>Margin 영역</legend>
+            <dd>
+                border 바깥쪽의 영역을 margin이라고 한다.
+            </dd>
+            <dd>
+                border 영역을 다른 요소와 구별하기 위해 쓰이는 빈 영역이다.
+            </dd>
+            <dd>
+                즉, 주변 요소와의 여백(간격)을 margin을 이용해 지정할 수 있다.
+            </dd>
+        </fieldset>
+
+        <h2>실습해보자</h2>
+        <div>박스 모델에 대하여 알아보자.</div>
+    </body>
+</html>

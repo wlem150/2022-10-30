@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>background</title>
+    <style>
+      div {
+        height: 500px;
+        width: 100%;
+        background-color: yellow;
+        background-image: url(https://www.w3schools.com/CSSref/img_tree.gif);
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        /* 이 모든 값을 축약해서 사용가능*/
+        background: yellow url(https://www.w3schools.com/CSSref/img_tree.gif)
+          no-repeat center top;
+      }
+    </style>
+  </head>
+  <body>
+    <div>css background 속성 실습</div>
+    <p>
+      background-repeat속성안에 백그라운드 이미지의 기본속성은 repeat으로 되어
+      있어서 설정해놓은 화면 안에서 화면 끝까지 반복한다. 그래서 no-repeat
+      설정을 해서, 반복을 그만두고 한번만 할 수 있도록 만들 수 있따.
+    </p>
+    <p>background-position은 이미지의 위치를 어디로 설정할지 정할 수 있다.</p>
+  </body>
+</html>

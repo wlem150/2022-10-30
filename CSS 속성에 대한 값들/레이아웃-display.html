@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      p {
+        display: inline-block;
+        border: 10px solid black;
+      }
+      th,
+      td {
+        text-align: center;
+        padding: 5px;
+        border: 1px solid black;
+        border-style: 0, 0, 1, 1;
+        border-collapse: collapse;
+      }
+      table {
+        border: 1px solid black;
+        width: 100%;
+        border-collapse: collapse;
+      }
+      body > div {
+        padding: 5px;
+        border: 1px dashed #aaa;
+      }
+      .box {
+        padding: 15px;
+        background-color: #eee;
+        border: 1px solid #aaa;
+      }
+      .none .box {
+        display: none;
+      }
+      .inline .box {
+        display: inline;
+      }
+      .block .box {
+        display: block;
+      }
+      .inline-block .box {
+        display: inline-block;
+      }
+      .list-item .box {
+        display: list-item;
+        margin-left: 10px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display</h1>
+    <fieldset>
+      <legend>Display : value;</legend>
+      <ul>
+        <li>none : 아무것도 안보이게 만듬</li>
+        <li>inline : 박스를 인라인으로 만듬. 위에 부모요소를 벗어남</li>
+        <li>
+          block : 부모요소 밖으로 튀어나가지 않고 안으로 박스가 만들어지며,
+          블랙형태로 만들어짐
+        </li>
+        <li>
+          inline-block : inline과는 다르게 부모요소 안에서 박스가 인라인형태로
+          만들어짐 * height 나 width 등과 같은 박스모델 속성을 적용할 수 있다.
+        </li>
+        <li>
+          list-item : block이랑 같지만 왼쪽에 ul 리스트와 같은 점이 각각의
+          라인마다 찍여져 나온다.
+        </li>
+        <li>
+          그외에 list-item, flex, inline-flex, table, table-cell 등 다양한 속성
+          값 존재
+        </li>
+        <li>
+          inline level 요소 사이의 공백과 개행 처리 inline 요소의 경우 공백과
+          개행에 대해서 하나의 여백으로 받아들인다. 따라서 inline 과
+          inline-blcok 의 경우 태그 사이의 공백이나 개행이 있을 경우 약 4px의
+          여백을 가지게 된다.
+        </li>
+      </ul>
+      <table>
+        <tr>
+          <th>display</th>
+          <th>width</th>
+          <th>height</th>
+          <th>margin</th>
+          <th>padding</th>
+          <th>border</th>
+        </tr>
+        <tr>
+          <td>block</td>
+          <td>o</td>
+          <td>o</td>
+          <td>o</td>
+          <td>o</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>inline</td>
+          <td>x</td>
+          <td>x</td>
+          <td>좌/우</td>
+          <td>o(설명)</td>
+          <td>o(설명)</td>
+        </tr>
+        <tr>
+          <td>inline-block</td>
+          <td>o</td>
+          <td>o</td>
+          <td>o</td>
+          <td>o</td>
+          <td>o</td>
+        </tr>
+      </table>
+    </fieldset>
+    <h2>Display Eaxmple</h2>
+    <h1>display</h1>
+    <h2>none</h2>
+    <div class="none">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+    </div>
+    <h2>inline</h2>
+    <div class="inline">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+      <div class="box">box4</div>
+      <div class="box">box5</div>
+      <div class="box">box6</div>
+      <div class="box">box7</div>
+      <div class="box">box8</div>
+      <div class="box">box9</div>
+      <div class="box">box10</div>
+    </div>
+    <h2>block</h2>
+    <div class="block">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+    </div>
+    <h2>inline-block</h2>
+    <div class="inline-block">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+    </div>
+    <h2>list-item</h2>
+    <div class="list-item">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+    </div>
+  </body>
+</html>

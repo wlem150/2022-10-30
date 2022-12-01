@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text-decoration</title>
+  </head>
+  <body>
+    <h1>text-decoration</h1>
+    <fieldset>
+      <legend>
+        text-decoration: text-decoration-line text-decoration-color
+        text-decoration-style | initial | inherit;
+      </legend>
+      <ul>
+        <li>none : 택스트 꾸밈을 생성하지 않음(기본값)</li>
+        <li>underline : 밑줄로 꾸밈</li>
+        <li>overline : 윗줄로 꾸밈</li>
+        <li>line-through : 중간을 꾸밈</li>
+      </ul>
+      <ul>
+        <li>solid : 한줄 스타일(기본값)</li>
+        <li>double : 이중선 스타일</li>
+        <li>dotted : 점선 스타일</li>
+        <li>dashed : 파선 스타일</li>
+        <li>wavy : 물결 스타일</li>
+      </ul>
+    </fieldset>
+    <br />
+    <h2>text-decoration Example</h2>
+    <h2>일반적인 경우</h2>
+    <p style="text-decoration: overline">text-decoration : overline</p>
+    <p style="text-decoration: underline">text-decoration : underline</p>
+    <p style="text-decoration: line-through">text-decoration : line-through</p>
+
+    <br />
+    <h2>부모 내 자식요소가 float 될경우 상속이 제거됨</h2>
+    <a href="#" style="text-decoration: overline"
+      ><span style="float: left">text-decoration : overline</span></a
+    ><br />
+    <h2>부모 내 자식요소가 absolute 될경우 상속이 제거됨</h2>
+    <a href="#" style="text-decoration: overline"
+      ><span style="position: absolute">text-decoration : overline</span>
+    </a>
+  </body>
+</html>

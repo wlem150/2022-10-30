@@ -1,0 +1,29 @@
+.item{
+    background-color: gray;
+}
+.a{
+    color: yellow;
+}
+.b{
+    color: blue;
+}
+#special{
+    color: red;
+}
+p[class="foo"]{
+    color: blue;
+}
+
+dt[class~="color"]{
+    font-style: italic;
+}
+dt[class^="cool"]{
+    color: blue;
+}
+
+dt[class$="Sample"]{
+    color: red;
+}
+dt[class*="cool"]{
+    font-weight: bold;
+}

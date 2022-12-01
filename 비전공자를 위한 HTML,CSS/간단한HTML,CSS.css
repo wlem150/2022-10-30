@@ -1,0 +1,18 @@
+p{
+    color: yellow;
+    font-size: 2em;
+}
+.foo{
+    font-size: 30px;
+    color: blue;
+}
+.html{
+    color: purple;
+}
+.css{
+    text-decoration: underline;
+}
+#bar{
+    background-color: yellow;
+    color: black;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>가상선택자</title>
+        <style>
+            p::before{
+                content: "before###";
+            }
+            p::after{
+                content: "after###";
+            }
+            p::first-line{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>가상선택자</h1>
+        <p>Sample 가상 클래스</p>
+        <p>Sample 가상 클래스</p>
+    </body>
+</html>
